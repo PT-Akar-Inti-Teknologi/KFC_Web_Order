@@ -12,5 +12,10 @@
     },
     "Footer": {
       "copyright": "© 2024 Your App. All rights reserved."
+    },
+    "AppBanner": {
+      "title": "Download KFCKU App",
+      "description": "Unlock more benefit",
+      "actionButton": "Download"
     }
   }
