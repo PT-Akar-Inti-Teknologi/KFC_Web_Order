@@ -9,6 +9,7 @@ import TripleLine from "../../triple-line/TripleLine";
 import { SignUpSignIn } from "../../button/Button.stories";
 import SignUpSignInButton from "../../button/SignUpSignInButton";
 import Button from "../../button/Button";
+import { DialogDescription, DialogTitle } from "@/components/ui/dialog";
 
 
 function MenuContainer({ children }: PropsWithChildren) {
@@ -55,6 +56,8 @@ function HeaderMobile() {
         handleOnly
       >
         <DrawerContent className="h-[calc(100vh-128px)] px-4"  >
+          <DialogTitle className="hidden">Menu</DialogTitle>
+          <DialogDescription className="hidden">Menu</DialogDescription>
           <div className="flex flex-col justify-center items-center space-y-6">
             <TripleLine color="primary" size={"medium"} spacing={"medium"} />
             <Button className="w-full">
