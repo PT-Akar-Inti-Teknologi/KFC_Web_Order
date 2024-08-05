@@ -28,11 +28,13 @@ function Logo(props: LogoProps) {
 
   return (
     <Image
-      {...imageProps}
+      className="w-auto h-auto"
+      priority
       src={imageConfig[variant].src}
       alt={imageConfig[variant].alt}
       width={imageConfig[variant].width}
       height={imageConfig[variant].height}
+      {...imageProps}
     />
   );
 }
