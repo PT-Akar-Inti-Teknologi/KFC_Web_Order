@@ -2,12 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Lato } from "next/font/google";
 import { cn } from "@/lib/utils";
-import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
 import Providers from "../../providers/providers";
 import "../globals.css";
-import Header from "@/components/header/Header";
 
 // setup fonts
 const lato = Lato({
@@ -61,7 +59,7 @@ export default async function LocaleLayout({
   params,
 }: Readonly<LocaleLayoutProps>) {
   const messages = await getMessages();
-
+  
   return (
     <html lang={params.locale}>
       <body
@@ -72,8 +70,9 @@ export default async function LocaleLayout({
           "bg-white",
         ])}
       >
-        <Header />
-        <Providers messages={messages}>{children}</Providers>
+        <Providers messages={messages}>
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -6,41 +6,52 @@ import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
+  DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useRouter } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocalSwitcher } from "./LocalSwitcher.hook";
+import ChevronDownIcon from "../icons/icon-collections/header-icons/ChevronDownIcon";
+import { cn } from "@/lib/utils";
 
 function LocalSwitcher() {
-  const [isPending, startTransition] = React.useTransition();
-  const localeActive = useLocale();
-  const router = useRouter();
-  const onValueChange = (value: string) => {
-    startTransition(() => {
-      router.replace(`/${value}`);
-    });
-  };
+  const state = useLocalSwitcher();
 
   return (
-    <DropdownMenu>
+    <DropdownMenu onOpenChange={state.setOpen}>
       <DropdownMenuTrigger asChild>
         <Button
-          className="text-white border-white bg-transparent border rounded-full"
-          disabled={isPending}
+          className="text-white border-white bg-transparent border rounded-full space-x-4"
+          disabled={state.isPending}
         >
-          Change Language
+          {state.localeActive.toUpperCase()}{" "}
+          <ChevronDownIcon
+            className={cn([
+              "duration-300 ease-in-out",
+              state.open && "rotate-180 ",
+            ])}
+          />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="">
-        <DropdownMenuRadioGroup
-          value={localeActive}
-          onValueChange={onValueChange}
+      <DropdownMenuContent
+        side="top"
+        sideOffset={8}
+        align="end"
+        className="w-[166px]"
+      >
+        <DropdownMenuItem
+          onSelect={() => state.action.onSelect("id")}
+          className="text-base"
+          textValue="id"
         >
-          <DropdownMenuRadioItem value="en">English</DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="id">Indonesian</DropdownMenuRadioItem>
-        </DropdownMenuRadioGroup>
+          Bahasa Indonesia
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onSelect={() => state.action.onSelect("en")}
+          className="text-base"
+          textValue="en"
+        >
+          English
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
