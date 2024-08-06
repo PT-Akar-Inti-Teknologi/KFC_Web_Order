@@ -6,16 +6,24 @@ const cvaStyle = cva("", {
   variants: {
     size: {
       small: ["w-[5px] h-[14px]"],
-      medium: ["w-3 h-[34px]"],
+      medium: [
+        "w-[5px] h-[14px]",
+        "md:w-3 md:h-[34px]"
+      ],
     },
     color: {
       primary: "bg-primary-500",
       dark: "bg-neutral-900",
     },
     spacing: {
-      small: "space-x-1",
-      medium: "space-x-2.5",
+      small: "",
+      medium: "",
     },
+  },
+  defaultVariants: {
+    size: "medium",
+    color: "primary",
+    spacing: "medium",
   },
 });
 
@@ -33,11 +41,18 @@ export default function TripleLine({
   spacing,
   ...props
 }: TripleLineProps) {
-  const container = cvaStyle({ spacing });
   const item = cvaStyle({ size, color, className: itemClassName });
 
   return (
-    <div className={cn(["flex", container])} {...props}>
+    <div
+      className={cn([
+        "flex",
+        spacing === "small" && "space-x-1",
+        spacing === "medium" && "space-x-1 md:space-x-2.5",
+        className,
+      ])}
+      {...props}
+    >
       <div className={item} />
       <div className={item} />
       <div className={item} />
