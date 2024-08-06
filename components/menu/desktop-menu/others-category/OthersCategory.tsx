@@ -26,7 +26,8 @@ function OthersCategory({ title, icon }: Readonly<OthersCategoryProps>) {
         className="text-lg cursor-pointer"
         textValue={item.name}
       >
-        {item.name}
+        {item.icon}
+        <span className="ml-2">{item.name}</span>
       </DropdownMenuItem>
     );
   };
@@ -51,10 +52,10 @@ function OthersCategory({ title, icon }: Readonly<OthersCategoryProps>) {
       </DropdownMenuTrigger>
       <DropdownMenuContent
         side="top"
-        sideOffset={12}
+        sideOffset={8}
         align="end"
-        className="w-[150px"
-        alignOffset={0}
+        className="w-[150px]"
+        alignOffset={-24}
       >
         {state.othersCategoryData.map(renderDropdownMenuItem)}
       </DropdownMenuContent>

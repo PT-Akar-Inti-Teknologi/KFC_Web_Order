@@ -1,27 +1,19 @@
+import CoffeeIcon from "@/components/icons/icon-collections/category-icons/CoffeeIcon";
+import DessertIcon from "@/components/icons/icon-collections/category-icons/DessertIcon";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 
 
 const othersCategoryData = [
   {
-    name: "Category 1",
-    icon: <></>,
-    to: "?category=category-1",
+    name: "Coffee",
+    icon: <CoffeeIcon/>,
+    to: "?category=coffee",
   },
   {
-    name: "Category 2",
-    icon: <></>,
-    to: "?category=category-2",
-  },
-  {
-    name: "Category 3",
-    icon: <></>,
-    to: "?category=category-3",
-  },
-  {
-    name: "Category 4",
-    icon: <></>,
-    to: "?category=category-4",
+    name: "Dessert",
+    icon: <DessertIcon/>,
+    to: "?category=dessert",
   },
 ];
 
