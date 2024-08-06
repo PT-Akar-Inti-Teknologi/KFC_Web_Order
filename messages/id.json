@@ -36,10 +36,13 @@
   "SpecialOffersSection": {
     "title": "Penawaran Spesial"
   },
+  "BestSellerSection": {
+      "title": "Penjualan Terbaik"
+    },
   "Actions": {
     "claimNow": "Klaim Sekarang",
     "seeAll": "Lihat Semua",
-    "promoCode": "Kode Promo"
-
+    "promoCode": "Kode Promo",
+    "addToCart": "Tambahkan ke Keranjang"
   }
 }

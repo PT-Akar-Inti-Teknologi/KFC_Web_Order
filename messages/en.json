@@ -37,9 +37,13 @@
     "SpecialOffersSection": {
       "title": "Special Offers"
     },
+    "BestSellerSection": {
+      "title": "Best Seller"
+    },
     "Actions": {
       "claimNow": "Claim Now",
       "seeAll": "See All",
-      "promoCode": "Promo Code"
+      "promoCode": "Promo Code",
+      "addToCart": "Add to cart"
     }
   }
