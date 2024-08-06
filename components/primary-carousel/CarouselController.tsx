@@ -1,9 +1,9 @@
 import React from "react";
-import { PrimaryBannerModel } from "./PrimaryCarousel.types";
+import { PrimaryCarouselModel } from "./PrimaryCarousel.types";
 import { cn } from "@/lib/utils";
 
 type CarouselControllerProps = {
-  data?: PrimaryBannerModel[];
+  data?: PrimaryCarouselModel[];
   current: number;
   onClick: (index: number) => void;
 };

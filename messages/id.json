@@ -32,5 +32,14 @@
   },
   "OrderTypeSection": {
     "title": "Hari ini lapar ? Langsung Order"
+  },
+  "SpecialOffersSection": {
+    "title": "Penawaran Spesial"
+  },
+  "Actions": {
+    "claimNow": "Klaim Sekarang",
+    "seeAll": "Lihat Semua",
+    "promoCode": "Kode Promo"
+
   }
 }

@@ -33,6 +33,13 @@
 
     "OrderTypeSection": {
       "title": "Hungry today? Let’s order"
+    },
+    "SpecialOffersSection": {
+      "title": "Special Offers"
+    },
+    "Actions": {
+      "claimNow": "Claim Now",
+      "seeAll": "See All",
+      "promoCode": "Promo Code"
     }
-    
   }
