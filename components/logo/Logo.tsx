@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React, { ComponentProps } from "react";
-import logoPrimary from "@/assets/images/logoPrimary.png";
-import logoSecondary from "@/assets/images/logoSecondary.png";
 
 type LogoVariant = "primary" | "secondary";
 type LogoProps = Omit<ComponentProps<typeof Image>, "src" | "alt"> & {
@@ -10,13 +8,13 @@ type LogoProps = Omit<ComponentProps<typeof Image>, "src" | "alt"> & {
 
 const imageConfig = {
   primary: {
-    src: logoPrimary,
+    src: '/images/logoPrimary.png',
     alt: "KFC",
     width: 121,
     height: 30,
   },
   secondary: {
-    src: logoSecondary,
+    src: '/images/logoSecondary.png',
     alt: "KFC",
     width: 40,
     height: 40,
@@ -28,12 +26,12 @@ function Logo(props: LogoProps) {
 
   return (
     <Image
-      className="w-auto h-auto"
-      priority
-      src={imageConfig[variant].src}
-      alt={imageConfig[variant].alt}
-      width={imageConfig[variant].width}
-      height={imageConfig[variant].height}
+    priority
+    src={imageConfig[variant].src}
+    alt={imageConfig[variant].alt}
+    width={imageConfig[variant].width}
+    height={imageConfig[variant].height}
+    className="w-auto h-auto"
       {...imageProps}
     />
   );
