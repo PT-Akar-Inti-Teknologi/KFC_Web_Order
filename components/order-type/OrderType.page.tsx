@@ -5,9 +5,8 @@ import SectionTitle from "../typography/SectionTitle";
 import { useTranslations } from "next-intl";
 import { OrderTypeModel } from "./OrderType.model";
 import { orderTypeData } from "./OrderType.utils";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import OrderTypeCarousel from "./OrderTypeCarousel";
+import OrderTypeCarousel from "./OrderType.carousel";
+import OrderTypeCard from "./OrderType.card";
 
 type OrderTypeSectionProps = {
   title?: string;
@@ -19,20 +18,7 @@ function OrderTypeSection({ title, data }: Readonly<OrderTypeSectionProps>) {
   data = data ?? orderTypeData;
 
   const renderDesktopItem = (item: OrderTypeModel, index: number) => {
-    return (
-      <Link
-        href={item.to}
-        key={item.title}
-        className={cn([
-          "flex items-center flex-col justify-center w-[162px] h-[112px] rounded-xl bg-neutral-25",
-        ])}
-      >
-        {item.icon}
-        <span className="text-base mt-2 lg:mt-1 lg:text-xl font-semibold">
-          {item.title}
-        </span>
-      </Link>
-    );
+    return <OrderTypeCard key={index} {...item} />;
   };
 
   return (
