@@ -20,7 +20,7 @@ function LocalSwitcher() {
     <DropdownMenu onOpenChange={state.setOpen}>
       <DropdownMenuTrigger asChild>
         <Button
-          className="text-white border-white bg-transparent border rounded-full space-x-4"
+          className="text-white border-white/20 hover:border-white bg-transparent border rounded-full space-x-4"
           disabled={state.isPending}
         >
           {state.localeActive.toUpperCase()}{" "}
