@@ -4,6 +4,9 @@ import TripleLine from "./TripleLine";
 const meta: Meta<typeof TripleLine> = {
   title: "Atoms/Accent/TripleLine",
   component: TripleLine,
+  parameters: {
+    layout: "centered",
+  },
   tags: ["autodocs"],
   args: {
     size: "medium",
@@ -41,6 +44,18 @@ export const Dark: Story = {
     size: "medium",
     color: "dark",
   },
+};
+
+export const Light: Story = {
+  args: {
+    size: "medium",
+    color: "light",
+  },
+  parameters: {
+    backgrounds: {
+      default: "primary",
+    },
+  }
 };
 
 export const PrimarySmall: Story = {

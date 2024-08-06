@@ -11,6 +11,9 @@ const meta: Meta<typeof Logo> = {
       control: { type: "select" },
     },
   },
+  parameters: {
+    layout: "centered",
+  },
 };
 
 export default meta;

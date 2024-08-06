@@ -6,6 +6,7 @@ import SignUpSignInButton from "./SignUpSignInButton";
 import MenuButton from "./MenuButton";
 import CartButton from "./CartButton";
 import CloseButton from "./CloseButton";
+import SeeAllButton from "./SeeAllButton";
 
 type StoryProps = ComponentProps<typeof Button> & {
   title: string;
@@ -119,4 +120,11 @@ export const Close: Story = {
     },
   },
   render: (args) => <CloseButton />,
+};
+
+export const SeeAll: Story = {
+  args: {
+    title: "See All",
+  },
+  render: (args) => <SeeAllButton title={args.title} />,
 };

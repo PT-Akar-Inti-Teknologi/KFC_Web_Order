@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import OrderTypeSection from "./OrderTypeSection";
+import OrderTypeSection from "./OrderType.page";
 
 const meta:Meta<typeof OrderTypeSection> = {
     title: "Organism/Sections/Order Type",
