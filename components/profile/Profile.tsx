@@ -14,7 +14,7 @@ import { ProfileAvatarProps } from "../profile-avatar/ProfileAvatar.types";
 
 type ProfileProps = ProfileAvatarProps;
 
-function Profile(props: ProfileProps) {
+function Profile(props: Readonly<ProfileProps>) {
   const state = useProfile();
   const renderMenuItem = (item: ProfileMenuListItem) => {
     return (
@@ -38,7 +38,7 @@ function Profile(props: ProfileProps) {
       </DropdownMenuTrigger>
       <DropdownMenuContent
         side="top"
-        sideOffset={12}
+        sideOffset={8}
         align="end"
         className="w-[280px]"
         alignOffset={12}
