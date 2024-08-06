@@ -101,10 +101,9 @@ const preview: Preview = {
             lato.variable,
             "font-lato",
             "text-neutral-900",
-            "w-full flex",
           ])}
           style={{
-            justifyContent: "flex-end",
+            width: "100%",
           }}
         >
           <Story />
