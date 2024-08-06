@@ -50,7 +50,7 @@ const CUSTOM_VIEWPORTS = {
   figma: {
     name: 'Figma',
     styles: {
-      width: '415px',
+      width: '375px',
       height: '812px',
     },
   },
