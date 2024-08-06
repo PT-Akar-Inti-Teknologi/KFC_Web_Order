@@ -1,8 +1,12 @@
-import { useTranslations } from "next-intl";
+import PrimaryCarousel from "@/components/primary-carousel/PrimaryCarousel";
+import { primaryCarouselData } from "@/components/primary-carousel/PrimaryCarousel.utils";
+import OrderTypeSection from "@/components/order-type-section/OrderTypeSection";
 
 export default function Home() {
-  const t = useTranslations();
   return (
-    <div>Homepage</div>
+    <div>
+      <PrimaryCarousel data={primaryCarouselData} />
+      <OrderTypeSection />
+    </div>
   );
 }
