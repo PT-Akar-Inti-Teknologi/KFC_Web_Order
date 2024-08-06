@@ -17,5 +17,22 @@
       "title": "Download KFCKU App",
       "description": "Unlock more benefit",
       "actionButton": "Download"
+    },
+    "EnterPromoCode": {
+      "title": "Enter Promo Code"
+    },
+    "Category": {
+      "special": "Special",
+      "breakfast": "Breakfast",
+      "combo": "Combo",
+      "alacarte": "Alacarte",
+      "drinks": "Drinks",
+      "kidsMeal": "Kids Meal",
+      "others": "Others"
+    },
+
+    "OrderTypeSection": {
+      "title": "Hungry today? Let’s order"
     }
+    
   }

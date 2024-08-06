@@ -33,8 +33,8 @@ export default function MyVoucherIcon(props: IconProps) {
         strokeLinejoin="round"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M17.9167 11.7086C15.6744 11.7086 15.6744 8.29052 17.9167 8.29052C17.9167 4.33014 17.9167 2.91663 10 2.91663C2.08334 2.91663 2.08334 4.33014 2.08334 8.29052C4.32562 8.29052 4.32562 11.7086 2.08334 11.7086C2.08334 15.6698 2.08334 17.0833 10 17.0833C17.9167 17.0833 17.9167 15.6698 17.9167 11.7086Z"
         stroke="currentColor"
         strokeWidth="1.5"

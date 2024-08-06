@@ -1,4 +1,6 @@
-export const headerMobileMenuData = [
+import { MobileMenuModel } from "./MobileMenu.types";
+
+export const mobileMenuData: MobileMenuModel[] = [
     {
         title: "HOME",
         isParent: false,
@@ -8,7 +10,7 @@ export const headerMobileMenuData = [
     {
         title: "ORDER",
         isParent: true,
-        to: null,
+        to: "",
         children: [
             {
                 title: "Services",
@@ -16,31 +18,45 @@ export const headerMobileMenuData = [
                 children: [
                     {
                         title: "Dine-in",
+                        isParent: false,
+                        children: [],
                         to: "?services=dine-in"
                     },
                     {
                         title: "Take Away",
+                        isParent: false,
+                        children: [],
                         to: "?services=take-away"
                     },
                     {
                         title: "Delivery",
+                        isParent: false,
+                        children: [],
                         to: "?services=delivery"
                     },
 
                     {
                         title: "Drive-Thru",
+                        isParent: false,
+                        children: [],
                         to: "?services=drive-thru"
                     },
                     {
                         title: "Catering",
+                        isParent: false,
+                        children: [],
                         to: "?services=catering"
                     },
                     {
                         title: "Catering",
+                        isParent: false,
+                        children: [],
                         to: "?services=catering"
                     },
                     {
                         title: "B'day Party",
+                        isParent: false,
+                        children: [],
                         to: "?services=birthday-party"
                     },
                 ]
@@ -66,18 +82,18 @@ export const headerMobileMenuData = [
         title: "KIDS",
         isParent: true,
         children: [],
-        to: null,
+        to: "",
     },
     {
         title: "AUTO MOTIVE",
         isParent: true,
-        to: null,
+        to: "",
         children: []
     },
     {
         title: "CORPORATE",
         isParent: true,
-        to: null,
+        to: "",
         children: []
     },
     {
@@ -99,7 +115,7 @@ export const headerMobileMenuData = [
         children: []
     },
     {
-        title: "CONTACT_US",
+        title: "CONTACT US",
         isParent: false,
         to: "/contact-us",
         children: []

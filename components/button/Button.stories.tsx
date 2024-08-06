@@ -74,7 +74,7 @@ export const EnterPromoCode: Story = {
       default: "primary",
     },
   },
-  render: ({ title }) => <EnterPromoCodeButton>{title}</EnterPromoCodeButton>,
+  render: ({ title }) => <EnterPromoCodeButton title={title} />,
 };
 
 export const SignUpSignIn: Story = {

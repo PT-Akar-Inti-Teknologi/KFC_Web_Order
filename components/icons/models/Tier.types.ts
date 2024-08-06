@@ -6,4 +6,4 @@ export type TierListItem = {
     title: string
 }
 
-export type TierType = "BASIC" | "GOLD" | "PLATINUM"
+export type TierType = "basic" | "gold" | "platinum"

@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
 import AppBanner from "@/components/app-banner/AppBanner";
-import Header from "@/components/header/Header";
+import Menu from "@/components/menu/Menu";
 import { useTranslations } from "next-intl";
 import { PropsWithChildren } from "react";
 
-export default function Template({ children }: PropsWithChildren) {
+export default function Template({ children }: Readonly<PropsWithChildren>) {
   const tAppBanner = useTranslations("AppBanner");
   return (
     <main>
@@ -16,7 +16,7 @@ export default function Template({ children }: PropsWithChildren) {
         onActionButtonClick={() => {}}
         onCloseButtonClick={() => {}}
       />
-      <Header/>
+      <Menu />
       {children}
     </main>
   );

@@ -14,8 +14,23 @@
     "copyright": "© 2024 Aplikasi Anda. Hak cipta dilindungi."
   },
   "AppBanner": {
-      "title": "Download KFCKU App",
-      "description": "Dapatkan lebih banyak manfaat",
-      "actionButton": "Unduh"
-    }
+    "title": "Download KFCKU App",
+    "description": "Dapatkan lebih banyak manfaat",
+    "actionButton": "Unduh"
+  },
+  "EnterPromoCode": {
+    "title": "Masukan Kode Promo"
+  },
+  "Category": {
+    "special": "Spesial",
+    "breakfast": "Sarapan",
+    "combo": "Kombinasi",
+    "alacarte": "Alacarte",
+    "drinks": "Minuman",
+    "kidsMeal": "Makanan Anak",
+    "others": "Lain-lain"
+  },
+  "OrderTypeSection": {
+    "title": "Hari ini lapar ? Langsung Order"
+  }
 }

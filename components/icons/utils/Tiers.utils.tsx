@@ -19,7 +19,7 @@ export const tierList: TierListItem[] = [
   ];
 
   export const ImageByTier = {
-    "BASIC": <BasicTier/>,
-    "GOLD": <GoldTier/>,
-    "PLATINUM": <PlatinumTier/>,
+    "basic": <BasicTier/>,
+    "gold": <GoldTier/>,
+    "platinum": <PlatinumTier/>,
   }
