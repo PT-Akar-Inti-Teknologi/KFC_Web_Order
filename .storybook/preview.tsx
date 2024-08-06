@@ -23,22 +23,22 @@ const lato = Lato({
 const national2condensed = localFont({
   src: [
     {
-      path: "../assets/fonts/National2Condensed/National2Condensed-Regular.otf",
+      path: "../fonts/National2Condensed/National2Condensed-Regular.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../assets/fonts/National2Condensed/National2Condensed-Medium.otf",
+      path: "../fonts/National2Condensed/National2Condensed-Medium.otf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../assets/fonts/National2Condensed/National2Condensed-Bold.otf",
+      path: "../fonts/National2Condensed/National2Condensed-Bold.otf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../assets/fonts/National2Condensed/National2Condensed-BoldItalic.otf",
+      path: "../fonts/National2Condensed/National2Condensed-BoldItalic.otf",
       weight: "700",
       style: "italic",
     },
