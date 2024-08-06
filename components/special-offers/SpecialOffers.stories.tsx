@@ -2,18 +2,29 @@ import { Meta, StoryObj } from "@storybook/react";
 import SpecialOffersSection from "./SpecialOffers.page";
 import { specialOffersData } from "./SpecialOffers.utils";
 
+const storyData = specialOffersData.map((data) => {
+    return {
+        ...data,
+        tClaimButton: "Claim Now",
+        tPromoCode: "Promo Code",
+    }
+})
+
 const meta: Meta<typeof SpecialOffersSection> = {
     title: "Organism/Sections/SpecialOffers",
     component: SpecialOffersSection,
     args: {
         title: "Special Offers",
-        data: specialOffersData,
+        data: storyData,
         seeAllLabel: "See all",
     },
     argTypes: {
         data: {
             control: { type: "object" },
         }
+    },
+    parameters: {
+        layout: ""
     }
 }
 

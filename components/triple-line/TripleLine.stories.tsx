@@ -4,6 +4,9 @@ import TripleLine from "./TripleLine";
 const meta: Meta<typeof TripleLine> = {
   title: "Atoms/Accent/TripleLine",
   component: TripleLine,
+  parameters: {
+    layout: "centered",
+  },
   tags: ["autodocs"],
   args: {
     size: "medium",

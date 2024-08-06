@@ -6,6 +6,8 @@ export type SpecialOfferModel = {
   title: string;
   description: string;
   src: string;
+  tPromoCode?: string;
+  tClaimButton?: string;
 };
 
 export type SpecialOfferCardProps = HTMLAttributes<HTMLDivElement> &

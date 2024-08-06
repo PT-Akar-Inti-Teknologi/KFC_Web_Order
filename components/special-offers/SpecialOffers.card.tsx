@@ -13,9 +13,12 @@ function SpecialOfferCard({
   onClaim,
   className,
   promo_code,
+  tPromoCode,
+  tClaimButton,
   ...props
 }: Readonly<SpecialOfferCardProps>) {
   const t = useTranslations("Actions");
+  const promoCodeLabel = tPromoCode ?? t("promoCode");
   return (
     <div
       className={cn([
@@ -41,11 +44,11 @@ function SpecialOfferCard({
 
         {promo_code ? (
           <p className="text-xs lg:text-sm text-neutral-500">
-            {t("promoCode")} <span className="mx-1">:</span>
+            {promoCodeLabel} <span className="mx-1">:</span>
             <strong className="text-primary-500 font-bold">{promo_code}</strong>
             </p>
         ) : (
-          <ClaimNowButton onClick={() => onClaim(id)} />
+          <ClaimNowButton title={tClaimButton} onClick={() => onClaim(id)} />
         )}
       </div>
     </div>
