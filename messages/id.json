@@ -37,12 +37,16 @@
     "title": "Penawaran Spesial"
   },
   "BestSellerSection": {
-      "title": "Penjualan Terbaik"
-    },
+    "title": "Penjualan Terbaik"
+  },
   "Actions": {
     "claimNow": "Klaim Sekarang",
     "seeAll": "Lihat Semua",
     "promoCode": "Kode Promo",
     "addToCart": "Tambahkan ke Keranjang"
+  },
+  "UnlockBanner": {
+    "title": "DAPATKAN LEBIH BANYAK MANFAAT",
+    "description": "Buat akun untuk mendapatkan akses ke promo eksklusif dan hadiah, serta pesan ulang favorit Anda."
   }
 }

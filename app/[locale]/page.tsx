@@ -3,6 +3,7 @@ import { primaryCarouselData } from "@/components/primary-carousel/PrimaryCarous
 import OrderTypeSection from "@/components/order-type/OrderType.page";
 import SpecialOffersSection from "@/components/special-offers/SpecialOffers.page";
 import BestSellerSection from "@/components/best-seller/BestSeller.page";
+import UnlockBanner from "@/components/unlock-banner/UnlockBanner";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <OrderTypeSection />
       <SpecialOffersSection />
       <BestSellerSection />
+      <UnlockBanner/>
     </div>
   );
 }

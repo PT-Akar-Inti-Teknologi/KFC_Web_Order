@@ -8,8 +8,9 @@ function SectionTitle({ children, className, ...props }: SectionTitleProps) {
     <h2
       className={cn(
         "font-national2condensed font-bold text-neutral-900 uppercase",
-        "text-[28px]",
-        "lg:text-5xl",
+        "text-[28px] leading-[30px]",
+        "lg:text-5xl lg:leading-[52px]",
+        "whitespace-pre-wrap",
         className
       )}
       {...props}

@@ -45,5 +45,9 @@
       "seeAll": "See All",
       "promoCode": "Promo Code",
       "addToCart": "Add to cart"
+    },
+    "UnlockBanner": {
+      "title": "UNLOCK More Finger Lickin’\nGood BENEFITS",
+      "description": "Create an account to get access to exclusive promos and rewards, and reorder your favorites."
     }
   }

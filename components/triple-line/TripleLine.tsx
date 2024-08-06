@@ -14,6 +14,7 @@ const cvaStyle = cva("", {
     color: {
       primary: "bg-primary-500",
       dark: "bg-neutral-900",
+      light: "bg-white",
     },
     spacing: {
       small: "",

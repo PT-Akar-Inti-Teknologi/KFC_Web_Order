@@ -3,7 +3,7 @@ import AppBanner from "./AppBanner";
 import {fn} from "@storybook/test";
 
 const meta:Meta<typeof AppBanner> = {
-    title: "Organism/App Banner",
+    title: "Organism/Banner/Mobile Banner",
     component: AppBanner,
     tags: ["autodocs"],
     parameters:{

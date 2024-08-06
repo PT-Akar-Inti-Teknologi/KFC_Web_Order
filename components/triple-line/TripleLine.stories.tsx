@@ -46,6 +46,18 @@ export const Dark: Story = {
   },
 };
 
+export const Light: Story = {
+  args: {
+    size: "medium",
+    color: "light",
+  },
+  parameters: {
+    backgrounds: {
+      default: "primary",
+    },
+  }
+};
+
 export const PrimarySmall: Story = {
   args: {
     size: "small",
