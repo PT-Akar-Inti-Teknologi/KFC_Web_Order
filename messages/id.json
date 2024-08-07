@@ -48,5 +48,10 @@
   "UnlockBanner": {
     "title": "DAPATKAN LEBIH BANYAK MANFAAT",
     "description": "Buat akun untuk mendapatkan akses ke promo eksklusif dan hadiah, serta pesan ulang favorit Anda."
+  },
+  "NewMemberDialog": {
+    "title": "Kamu mempunyai 1 vouher untuk digunakan!",
+    "description": "Selamat, sebagai member baru kami memberikan  1 voucher untuk diguankan. Ayo pesan!",
+    "actionButton": "OK"
   }
 }
