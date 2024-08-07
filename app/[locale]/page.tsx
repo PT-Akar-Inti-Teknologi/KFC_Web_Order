@@ -10,7 +10,7 @@ import { NewMemberDialog } from "@/components/dialog/new-member-dialog/NewMember
 import { useState } from "react";
 
 export default function Home() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <div>
