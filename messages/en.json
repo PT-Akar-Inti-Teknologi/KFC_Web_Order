@@ -49,5 +49,10 @@
     "UnlockBanner": {
       "title": "UNLOCK More Finger Lickin’\nGood BENEFITS",
       "description": "Create an account to get access to exclusive promos and rewards, and reorder your favorites."
+    },
+    "NewMemberDialog": {
+      "title": "You have 1 voucher to use!",
+      "description": "Congratulations as a new member we give you one voucher to use! Let’s make an order!",
+      "actionButton": "OK"
     }
   }
