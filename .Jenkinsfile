@@ -6,7 +6,7 @@ pipeline {
   agent any
     environment {
       //service port
-      SERVICE_TARGET_PORT = 80
+      SERVICE_TARGET_PORT = 3000
       NAMESPACE = "kfc-web-order"
       PATH = newPath(env)
       ALLOWED_BRANCH = "dev"
