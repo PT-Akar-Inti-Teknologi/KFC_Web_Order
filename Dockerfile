@@ -17,8 +17,9 @@ RUN yarn build
 # Stage 2: Serve the application
 FROM nginx:alpine
 
-# Copy the build artifacts from the previous stage
-COPY --from=build /app/dist /usr/share/nginx/html
+# Copy the Next.js build output from the build stage
+COPY --from=build /app/.next /usr/share/nginx/html/_next
+COPY --from=build /app/public /usr/share/nginx/html/
 
 # Expose port 80
 EXPOSE 80
