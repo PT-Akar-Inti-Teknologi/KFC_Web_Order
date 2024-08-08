@@ -8,11 +8,11 @@ WORKDIR /app
 COPY package*.json ./
 RUN yarn install
 
-# Build and compile next js
-RUN yarn build
-
 # Copy the rest of the application code
 COPY . .
+
+# Build and compile next js
+RUN yarn build
 
 # Start Nginx
 CMD ["yarn", "run", "start"]
