@@ -5,6 +5,7 @@ static String newPath(env) {
 pipeline {
   agent any
     environment {
+      //service port
       SERVICE_TARGET_PORT = 80
       NAMESPACE = "kfc-web-order"
       PATH = newPath(env)
